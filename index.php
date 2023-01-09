@@ -7,8 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
+    
+    <p>
+        <?php
+            $lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia in nulla numquam natus aliquam minus pariatur nesciunt porro, quia quaerat dignissimos inventore eius, quos quidem recusandae unde hic autem.";
+            echo $lorem;
+
+        ?> 
+
+    </p>
+    <p>
+        La lunghezza del paragrafo è:
+        <?php
+            
+            echo strlen($lorem);
+
+        ?> 
+    </p>
+    <p>
+        <?php
+        $blur = $_GET['word'];
+        echo $newString = str_replace($blur, "***", $lorem);
+        ?> 
+
+    </p>
+        
+    
+    
+    
 </body>
 </html>
