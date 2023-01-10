@@ -26,8 +26,11 @@
     </p>
     <p>
         <?php
-        $blur = $_GET['word'];
-        echo $newString = str_replace($blur, "***", $lorem);
+        $blur = "";
+        if (isset($_GET["word"])) {
+            $blur = $_GET["word"];
+            echo $newString = str_replace($blur, "***", $lorem);
+        };
         ?> 
 
     </p>
